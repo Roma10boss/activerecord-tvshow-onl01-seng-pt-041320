@@ -1,6 +1,6 @@
 class Show < ActiveRecord::Base
   attr_accessor :name, :season, :column
-  attr_reader :name, :column, :attribute
+  attr_accessor :name, :column, :attribute
 
   def Show::highest_rating
     Show.maximum("rating")
